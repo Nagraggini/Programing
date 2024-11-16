@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+
+<head>
+    <script src="script.js"></script><!-- Külső Javascript fájl -->
+    <link rel="stylesheet" href="styles.css"> <!-- Külső CSS fájl -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>A teszt oldalam</title>
+</head>
+
+<body>
+    <h1>Üdvözöllek!</h1>
+    <p>Ez az én teszt HTML oldalam.</p>
+<a href="https://www.edclub.com/">Vakon gépelés megtanulásához.</a>
+</br> </br>
+<a href="https://www.duolingo.com/">Dualingo</a>
+</br>
+<p><strong>English idioms that everyone should know:</strong></p>
+<ul>
+    <li>Under the weather</li>
+    <li>The ball is in your court</li>
+    <li>Spill the beans</li>
+    <li>Break a leg</li>
+</ul>
+</br>
+<img src="Unicorn.jpg" alt="Unikornis">
+<table> 
+<tr> 
+	<th>Kifejezés</th>
+	<th>Jelentése</th> 
+</tr>
+ <tr> 
+	<td>Under the weather</td> 
+	<td>  feeling sick or unwell</td>
+ </tr> 
+</table>
+
+<h1>Rajzolás a canvas-en</h1>
+    <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        // Téglalap rajzolása
+        ctx.fillStyle = "#FF0000"; // Szín megadása
+        ctx.fillRect(50, 50, 150, 100); // Téglalap rajzolása (x, y, szélesség, magasság)
+
+        // Kör rajzolása
+        ctx.beginPath();
+        ctx.arc(200, 150, 40, 0, 2 * Math.PI); // (x, y, sugár, kezdő szög, vég szög)
+        ctx.stroke(); // Vonalrajz
+    </script>
+
+</body>
+</html>
+
+
